@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: hsl(225, 100%, 94%);
+    display: grid;
+    place-items: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    width: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+
+.heading {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.description {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.hero-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pricing,
+.btn-container,
+.btn-container {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.pricing {
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    padding: 18px 2rem;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.pricing .plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing .plan h4 {
+    width: max-content;
+}
+
+.pricing .plan p {
+    color: hsl(224, 23%, 55%);
+}
+
+.pricing div {
+    margin-right: 30px;
+}
+
+.pricing div a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-container {
+    margin-top: 40px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding-block: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 1px 32px 19px -9px rgba(56, 41, 224, 0.2);
+}
+
+.btn-neutral {
+    color: hsl(224, 23%, 55%);
+    transition: 0.2s;
+}
+
+
+/* active states */
+
+.pricing div a:hover {
+    text-decoration: none;
+    color: hsl(245, 55%, 52%);
+}
+
+.btn-primary:hover {
+    background: hsl(245, 50%, 52%);
+}
+
+.btn-neutral:hover {
+    color: hsl(223, 47%, 23%);
+}
